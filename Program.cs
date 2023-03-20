@@ -5,12 +5,11 @@ class MainProgram
 {
     static void Main(string[] args)
     {
-        SimpleDataBase<long> database = new SimpleDataBase<long>();
-        database.addNewData(13, DateTime.Now);
-        database.addNewData(02, DateTime.Now);
-        database.addNewData(21, DateTime.Now);
-        
-        database.printAllData();
+        Penjumlahan<long> jumlah = new Penjumlahan<long>();
+        long a = 13;
+        long b = 02;
+        long c = 21;
 
+        jumlah.JumlahTigaAngka(a, b, c);
     }
 }
